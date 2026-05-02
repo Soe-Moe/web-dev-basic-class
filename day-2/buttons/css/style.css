@@ -1,0 +1,45 @@
+/* Container ကို အလယ်ရောက်အောင် လုပ်ခြင်း (Optional) */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  margin: 0;
+}
+
+/* Button ရဲ့ အခြေခံ Style */
+.btn-primary {
+  padding: 15px 35px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(
+    45deg,
+    #6e8efb,
+    #a777e3
+  ); /* လှပတဲ့ Gradient အရောင် */
+  border: none;
+  border-radius: 50px; /* ထောင့်ဝိုင်းဝိုင်းလေး ဖြစ်စေဖို့ */
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* အောက်က အရိပ်လေး */
+
+  /* Transition ထည့်သွင်းခြင်း */
+  transition: all 0.3s ease;
+}
+
+/* Mouse တင်လိုက်တဲ့အခါ ဖြစ်မယ့် Style (Hover Effect) */
+.btn-primary:hover {
+  background: linear-gradient(
+    45deg,
+    #a777e3,
+    #6e8efb
+  ); /* အရောင်ပြောင်းပြန်လှန်မယ် */
+  transform: translateY(-3px); /* အပေါ်ကို အနည်းငယ် ကြွတက်လာမယ် */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* အရိပ်ကို ပိုထင်ရှားစေမယ် */
+}
+
+/* နှိပ်လိုက်တဲ့အခါ ဖြစ်မယ့် Style (Active Effect) */
+.btn-primary:active {
+  transform: translateY(10px); /* ပြန်နိမ့်သွားစေမယ် */
+}
