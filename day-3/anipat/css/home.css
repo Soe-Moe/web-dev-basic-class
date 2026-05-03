@@ -1,0 +1,107 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  align-items: center;
+}
+
+.menu-bar .logo {
+}
+
+.menu-bar .menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu-bar .menu a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.home-banner {
+  background-image: url("../img/banner.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  height: 650px;
+}
+
+.banner-image img {
+  width: 750px;
+  margin-top: 150px;
+}
+
+.banner-text {
+  padding-top: 200px;
+  padding-left: 150px;
+}
+
+.banner-text .title {
+  font-size: 80px;
+  color: #ffffff;
+}
+.banner-text p {
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.banner-text .title div:first-child {
+  font-weight: lighter;
+}
+
+.banner-text .title div:last-child {
+  font-weight: bold;
+}
+
+.contact-btn {
+  font-size: 18px;
+  padding: 20px 40px;
+  border-radius: 100px;
+  border: none;
+  color: #f03c15;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background-color: #f03c15;
+  color: #ffffff;
+}
+
+.boxes {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 100px;
+}
+.boxes div {
+  width: 300px;
+  height: 150px;
+  border: 1px solid #f03c15;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.boxes div h2 {
+  text-align: center;
+}
+
+.boxes div p {
+  text-align: center;
+}
