@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 2</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        display: flex; /* Flex အသုံးပြုမည့်ကို ကြေငြာချင်း */
+        gap: 10px; /* Box တစ်ခုနှင့်တစ်ခုကြား ခြားနားခြင်း*/
+        flex-wrap: wrap; /* Screen တစ်ခုမှာ ဆန့်နိုင်မယ့် Box အရေအတွက်ထက်ကျော်သွားရင် အောက်တစ်ကြောင်းချရန်*/
+        justify-content: center; /* Box တွေကို Horizontally အရှေ့ (start), အနောက် (end) အလယ်(center), အညီအမျှ (space-between) နေရာချထားရန်*/
+        align-items: center; /* Box တွေကို vertically အပေါ်ဆုံး (start), အောက်ဆုံး(end), အလယ်(center) နေရာချထားရန်*/
+        height: 100vh; /*  Screen Width (vw - vertical width) (vh - vertical height)*/
+      }
+      .box {
+        width: 150px;
+        height: 150px;
+        background-color: #ff0000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dock-menu {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 100vh;
+}
+
+.dock-menu .item {
+  transition: 0.3s;
+}
+
+.dock-menu .item:hover {
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.dock-menu .item:hover img {
+  width: 100px;
+  height: 100px;
+  transition: 0.3s;
+}
+
+.dock-menu .item img {
+  width: 80px;
+  height: 80px;
+}
+
+/*-------------------Gift-------------*/
+.dock-menu .item {
+  position: relative;
+}
+
+/* Item တစ်ခုချင်းစီ၏ Title, စစချင်းမှာဖျောက်ထားမယ်*/
+.dock-menu .item .title {
+  display: none; /* Dispaly မှာ မပြစေရန်*/
+  color: white;
+  background-color: rgba(0, 0, 0, 0.352);
+  padding: 4px 14px;
+  border-radius: 20px;
+  position: absolute;
+  top: -15px;
+  font-size: 14px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+/* Item ကို hover လုပ်ရင် title လေးတွေကို ပြန်ပြရန်*/
+.dock-menu .item:hover .title {
+  display: block;
+}
