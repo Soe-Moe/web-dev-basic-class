@@ -1,0 +1,133 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+.login-button {
+  padding: 10px;
+  width: 150px;
+  background-color: #3624ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #1a0ac7;
+}
+
+.outline-button {
+  border: 2px solid #3624ff;
+  padding: 10px;
+  width: 150px;
+  color: #3624ff;
+  background-color: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
+}
+
+.outline-button:hover {
+  background-color: #3624ff;
+  color: #ffffff;
+  animation: dynamic-color infinite 5s ease-in-out;
+}
+
+.zoom-animate {
+  animation: zoom infinite 0.5s ease-in-out;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.rotate-animate {
+  animation: rotate infinite 0.5s linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.shake-animate {
+  animation: shake infinite 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-5px, 0);
+  }
+  50% {
+    transform: translate(5px, 0);
+  }
+  75% {
+    transform: translate(-5px, 0);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.dynamic-color-animate {
+  animation: dynamic-color infinite 0.5s ease-in-out;
+}
+
+@keyframes dynamic-color {
+  0% {
+    background-color: #3624ff;
+  }
+  25% {
+    background-color: #05f75e;
+  }
+  50% {
+    background-color: #6565eb;
+  }
+  75% {
+    background-color: #000000;
+  }
+  100% {
+    background-color: #eb071e;
+  }
+}
+
+/* -------------------Walking Boy------------------------- */
+.walking-boy {
+  width: 80px;
+  height: 200px;
+  background-image: url("../img/walking-boy.png");
+  background-size: 640px 200px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  animation: walkingBoy 1s steps(8) infinite;
+}
+
+@keyframes walkingBoy {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -560px 0;
+  }
+}
